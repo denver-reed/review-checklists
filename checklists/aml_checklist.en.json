@@ -1,0 +1,156 @@
+{
+    "items": [
+        {
+            "category": "Foundation",
+            "text": "Deploy models to Azure environments that support availability zones to ensure availability in case of a datacenter failure. Consider a multi-region deployment for critical models and workloads",
+            "waf": "Reliability",
+            "service": "Azure Machine Learning",
+            "guid": "1c7a38d5-b51b-46dc-ad43-e458b2d24a26",
+            "id": "AML.1",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-high-availability-machine-learning?view=azureml-api-2#design-for-high-availability"
+        },
+        {
+            "category": "Foundation",
+            "text": "Ensure the Azure environment has sufficient dedicated virtual machine compute for both training and inferencing. Confirm SKU and scale settings meet the workload's requirements",
+            "waf": "Reliability",
+            "service": "Azure Machine Learning",
+            "guid": "72b2945c-49d1-4469-9c92-f06b5f42be81",
+            "id": "AML.10",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/quotas/per-vm-quota-requests"
+        },
+        {
+            "category": "Foundation",
+            "text": "Deploy separate Machine Learning workspaces for dev/exploratory work apart from those used for production",
+            "waf": "Reliability",
+            "service": "Azure Machine Learning",
+            "guid": "208f7f56-eabf-4ef6-a958-50d386228771",
+            "id": "AML.11",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2#organizing-workspaces"
+        },
+        {
+            "category": "Foundation",
+            "text": "When using online endpoints, use a release strategy such as blue-green deployments to minimize overhead and reduce risk for new deployments",
+            "waf": "Reliability",
+            "service": "Azure Machine Learning",
+            "guid": "54fd2aa5-c329-4507-8002-b591502e0022",
+            "id": "AML.12",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2&tabs=azure-cli"
+        },
+        {
+            "category": "Foundation",
+            "text": "When training large models, leverage a tool such as Nebula to enable self-healing capabilities, such as checkpointing features",
+            "waf": "Reliability",
+            "service": "Azure Machine Learning",
+            "guid": "215ab304-302b-4307-9cc7-098521db6a46",
+            "id": "AML.13",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/reference-checkpoint-performance-for-large-models?view=azureml-api-2&tabs=PYTORCH"
+        },
+        {
+            "category": "Foundation",
+            "text": "Ensure that a recovery strategy has been defined for the workspace and all dependent services, such as Key Vault, Azure Storage, Azure Container Registry, etc.",
+            "waf": "Reliability",
+            "service": "Azure Machine Learning",
+            "guid": "6111f62a-b96c-43dc-9f3e-df2baa7a435b",
+            "id": "AML.14",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-high-availability-machine-learning?view=azureml-api-2"
+        },
+        {
+            "category": "Security, Governance and Compliance",
+            "text": "Restrict access to the Machine Learning workspace to resouces within the virtual network",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "c72e25fa-4a2f-406c-a99a-c3c20a6ef237",
+            "id": "AML.15",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-secure-workspace-vnet?view=azureml-api-2&tabs=required%2Cpe%2Ccli#securely-connect-to-your-workspace"
+        },
+        {
+            "category": "Security, Governance and Compliance",
+            "text": "Implement network isolation on the workspace to ensure all external access is denied by default unless explicitly approved",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "3f8b264d-dd50-4ffe-a7a7-4c9edb2d860f",
+            "id": "AML.16",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-isolation-planning?view=azureml-api-2"
+        },
+    ],
+    "categories": [
+        {
+            "name": "Foundation"
+        },
+        {
+            "name": "Identity"
+        },
+        {
+            "name": "Networking"
+        },
+        {
+            "name": "Security, Governance and Compliance"
+        },
+        {
+            "name": "Management and Monitoring"
+        }
+    ],
+    "waf": [
+        {
+            "name": "Reliability"
+        },
+        {
+            "name": "Security"
+        },
+        {
+            "name": "Cost"
+        },
+        {
+            "name": "Operations"
+        },
+        {
+            "name": "Performance"
+        }
+    ],
+    "status": [
+        {
+            "name": "Not verified",
+            "description": "This check has not been looked at yet"
+        },
+        {
+            "name": "Open",
+            "description": "There is an action item associated to this check"
+        },
+        {
+            "name": "Fulfilled",
+            "description": "This check has been verified, and there are no further action items associated to it"
+        },
+        {
+            "name": "Not required",
+            "description": "Recommendation understood, but not needed by current requirements"
+        },
+        {
+            "name": "N/A",
+            "description": "Not applicable for current design"
+        }
+    ],
+    "severities": [
+        {
+            "name": "High"
+        },
+        {
+            "name": "Medium"
+        },
+        {
+            "name": "Low"
+        }
+    ],
+    "metadata": {
+        "name": "Azure Machine Learning Review",
+        "state": "Preview",
+        "timestamp": "September 25, 2024"
+    }
+}
