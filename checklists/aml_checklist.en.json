@@ -22,7 +22,7 @@
         },
         {
             "category": "Foundation",
-            "text": "Deploy separate Machine Learning workspaces for dev/exploratory work apart from those used for production",
+            "text": "Deploy separate Machine Learning workspaces for dev/exploratory work apart from those used for production. Also consider deploying workspaces based on specific use cases or project",
             "waf": "Reliability",
             "service": "Azure Machine Learning",
             "guid": "208f7f56-eabf-4ef6-a958-50d386228771",
@@ -72,7 +72,7 @@
         },
         {
             "category": "Security, Governance and Compliance",
-            "text": "Implement network isolation on the workspace to ensure all external access is denied by default unless explicitly approved",
+            "text": "Implement network isolation on the workspace to ensure all external access is denied by default unless explicitly approved. Force the traffic over a private endpoint",
             "waf": "Security",
             "service": "Azure Machine Learning",
             "guid": "3f8b264d-dd50-4ffe-a7a7-4c9edb2d860f",
@@ -80,6 +80,56 @@
             "severity": "High",
             "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-network-isolation-planning?view=azureml-api-2"
         },
+        {
+            "category": "Security, Governance and Compliance",
+            "text": "Use RBAC to manage access to Azure Machine Learning workspace. Assign appropriate permissions to users and restrict access based on least privilege principle",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "267ec746-70ff-4cc3-be56-d4a664cffaed",
+            "id": "AML.17",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2&tabs=team-lead"
+        },
+        {
+            "category": "Security, Governance and Compliance",
+            "text": "Restrict model catalog deployments to specific registries to regulate access to the open-source foundational models",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "b84b0262-a487-4efe-8484-b9589e4c0b25",
+            "id": "AML.18",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-regulate-registry-deployments?view=azureml-api-2"
+        },
+        {
+            "category": "Security, Governance and Compliance",
+            "text": "Implement encryption for data at rest and data in transit",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "aa1dd205-efe8-4ed4-a2aa-a0f84e34994b",
+            "id": "AML.2",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/ai-machine-learning-enterprise-security#data-encryption"
+        },
+        {
+            "category": "Security, Governance and Compliance",
+            "text": "Apply the Azure security baseline for Machine Learning to establish baseline security principles",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "ba28e9b0-5f97-4f35-ab24-f339093c449d",
+            "id": "AML.20",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/machine-learning-service-security-baseline"
+        },
+        {
+            "category": "Security, Governance and Compliance",
+            "text": "Disable local authentication and leverage managed identities for authentication between Azure Machine Learning and other services",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "8af5daca-4a5f-4077-b470-c68c73693557",
+            "id": "AML.21",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-authentication?view=azureml-api-2&tabs=sdk#configure-a-managed-identity"
+        }
     ],
     "categories": [
         {
