@@ -102,7 +102,7 @@
         },
         {
             "category": "Security, Governance and Compliance",
-            "text": "Implement encryption for data at rest and data in transit",
+            "text": "Implement encryption for data at rest and data in transit. Consider user customer-managed keys if required",
             "waf": "Security",
             "service": "Azure Machine Learning",
             "guid": "aa1dd205-efe8-4ed4-a2aa-a0f84e34994b",
@@ -129,7 +129,98 @@
             "id": "AML.21",
             "severity": "High",
             "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-setup-authentication?view=azureml-api-2&tabs=sdk#configure-a-managed-identity"
-        }
+        },
+        {
+            "category": "Networking",
+            "text": "Disable public SSH acess to prevent unauthorized individuals from access your Machine Learning compute cluster",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "e5699bda-25b2-4787-bb9e-ad33085fc5ae",
+            "id": "AML.22",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-attach-compute-studio?view=azureml-api-2#advanced-settings"
+        },
+        {
+            "category": "Networking",
+            "text": "Don't provision public IP address for compute",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "eaf7e92e-f92a-4a0f-b3cf-f97abdfdd9c2",
+            "id": "AML.23",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces/computes?pivots=deployment-language-bicep#amlcomputeproperties"
+        },
+        {
+            "category": "Management and Monitoring",
+            "text": "Regularly update compute instances to have the latest operating system image",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "eaf7e92e-f92a-4a0f-b3cf-f97abdfdd9c2",
+            "id": "AML.24",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/ai-studio/how-to/create-manage-compute"
+        },
+        {
+            "category": "Management and Monitoring",
+            "text": "Prevent data exfiltration by limiting inbound and outbound traffic",
+            "waf": "Security",
+            "service": "Azure Machine Learning",
+            "guid": "9d0def91-9c99-4de3-b187-a32cd657ad25",
+            "id": "AML.25",
+            "severity": "High",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-prevent-data-loss-exfiltration?view=azureml-api-2&tabs=servicetag"
+        },
+        {
+            "category": "Management and Monitoring",
+            "text": "Leverage built-in Azure Policy definitions for Machine Learning Security when possible",
+            "waf": "Operations",
+            "service": "Azure Machine Learning",
+            "guid": "f9cdc4bb-cf63-4969-950b-c3c80ed4e475",
+            "id": "AML.26",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/policy-reference"
+        },
+        {
+            "category": "Foundation",
+            "text": "Ensure the correct compute resources are selected based on the requirements of the workload",
+            "waf": "Performance",
+            "service": "Azure Machine Learning",
+            "guid": "e240227c-84af-44f8-8902-24ca2f11a990",
+            "id": "AML.27",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-compute-target?view=azureml-api-2#supported-vm-series-and-sizes"
+        },
+        {
+            "category": "Management and Monitoring",
+            "text": "Configure autoscaling for compute clusters to scale down when their usage is low",
+            "waf": "Cost",
+            "service": "Azure Machine Learning",
+            "guid": "95ca3818-b9c6-4975-88c7-71f36848f9f6",
+            "id": "AML.28",
+            "severity": "Low",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost#configure-training-clusters-for-autoscaling"
+        },
+        {
+            "category": "Management and Monitoring",
+            "text": "For training clusters, set minimum number of nodes to 0 to optimze costs when clusters are not in use",
+            "waf": "Cost",
+            "service": "Azure Machine Learning",
+            "guid": "efcee56b-661d-42e0-828d-2877125422c3",
+            "id": "AML.29",
+            "severity": "Low",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost#configure-training-clusters-for-autoscaling"
+        },
+        {
+            "category": "Management and Monitoring",
+            "text": "Set early termination policies to save costs by stopping nonperforming runs early",
+            "waf": "Cost",
+            "service": "Azure Machine Learning",
+            "guid": "a37370bd-4ceb-42a8-b000-0a0e8bf75365",
+            "id": "AML.3",
+            "severity": "Low",
+            "link": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2#early-termination"
+        },
+
     ],
     "categories": [
         {
